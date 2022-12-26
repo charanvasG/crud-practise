@@ -1,0 +1,30 @@
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+.container{
+    background: rgb(235, 239, 241);
+   padding: 10px;
+    box-sizing: border-box;
+    box-shadow :0 15px 25px rgba(0,0,0,1);
+    width:50%;
+    margin-top: 10px;
+  
+}
+mat-form-field{
+    width: 69%;
+    margin-bottom: 10px;
+    margin-left: 15%;
+}
+.btn-primary{
+    background-color:rgb(5, 60, 171);
+    margin-left: 15px;
+    color: white;
+    
+}
+.btn-warn{
+    background-color:red;
+    margin-left: 58%;
+    color:white
+}
+

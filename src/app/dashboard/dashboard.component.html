@@ -1,0 +1,46 @@
+
+
+<div class="container-fluid tables">
+  
+    <div class="headers">
+      <h1 class="table-title">PRODUCTS</h1>
+      <a routerLink="/create" ><button class=" btn btn-primary">ADD PRODUCT</button></a>
+        </div>
+    
+ 
+    <table class="table">
+      
+    
+        <thead>
+          
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Product</th>
+            <th scope="col">Product Image</th>
+            <th scope="col">Categories</th>
+            <th scope="col">Date</th>
+            <th scope="col">Price</th>
+            <th scope="col">Comment</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor= "let p of productlist">
+            <th scope="row" >{{p.id}}</th>
+          
+            <td> {{p.productname}} </td>
+            <td ><img src= "{{p.productimage}}" height="40px" > </td>
+            <td> {{p.categories}} </td>
+            <td> {{p.date |date:"MM/dd/yyyy" }}</td>
+            <td> {{p.price }}</td>
+            <td> {{p.comment}}</td>
+            <td>
+                <button (click)="update(p.id)"  style="background-color: rgb(90, 229, 222);">Edit</button>
+               <button (click)="removeProduct(p.id)" style="background-color: red;" >delete</button>
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+

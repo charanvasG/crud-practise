@@ -1,0 +1,34 @@
+.sidenav-container {
+  height: 100%;
+  margin-left: -35px;
+}
+.mat-icon{
+  padding: 25px;
+  width:50px;
+  height:50px
+}
+
+.sidenav {
+  width: 190px;
+ 
+  background-color: rgb(122, 128, 198);
+  padding-left: 40px;
+  padding-right: 30px;
+}
+.btn-secondary{
+  background-color: rgb(185, 54, 54);
+  border-radius: 5px;
+ margin-left: 565%;
+}
+.btn-primary{
+  margin-left: 780%;
+  background-color: rgb(96, 79, 191);
+}
+.btn-info{
+  background-color: rgb(221, 27, 115);
+  border-radius: 5px;
+  margin-left: 540%;
+}
+.mat-drawer-inner-container {
+  width: 250%;
+}

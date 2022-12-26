@@ -1,0 +1,6 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .btn-warn{
+    background-color: rgb(210, 54, 54);
+  }

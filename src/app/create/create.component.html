@@ -1,0 +1,55 @@
+<form [formGroup]="productform">
+
+    <div mat-dialog-content class="container">
+      <h2>Add Product Details</h2>
+        <mat-form-field appearance="outline">
+            <mat-label>Product</mat-label>
+            <input formControlName="productname" matInput placeholder="Product Name">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Product Image</mat-label>
+            <input formControlName="productimage" matInput placeholder="Productimage">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Categories</mat-label>
+            <mat-select  formControlName="categories" placeeholder="Categories">
+              <mat-option value="Fruits">Fruits</mat-option>
+              <mat-option value="Vegetables">Vegetables </mat-option>
+              <mat-option value="Electronics">Electronics</mat-option>
+            </mat-select>
+          </mat-form-field>
+    
+    
+            <mat-form-field appearance="outline">
+            <mat-label>Choose a date</mat-label>
+            <input  formControlName="date" matInput [matDatepicker]="picker" placeholder="Select Only Date">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field> 
+          
+                <mat-form-field appearance="outline">
+                    <mat-label>Price</mat-label>
+                    <input  formControlName="price" matInput  Placeholder="Price">
+                  </mat-form-field>
+        
+                  <mat-form-field appearance="outline">
+                    <mat-label >Comment</mat-label>
+                    <textarea formControlName="comment" matInput></textarea>
+                  </mat-form-field>
+  
+    
+
+                <button type="button" class="btn btn-warn" routerLink="/dashboard">Close</button>
+                <button type="button" class="btn btn-primary"  (click)="addProduct()" [disabled]="productform.invalid">Save</button>
+              </div>
+            </form>
+
+            <div>
+              .
+              </div>
+
+
+    
